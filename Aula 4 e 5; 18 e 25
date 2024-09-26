@@ -1,0 +1,225 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOtRlWLNHCLskdvdqirgF0w",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/moralehub/TurmaCIVIL/blob/main/Aula%204%20e%205%3B%2018%20e%2025\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **EXEMPLO LOO´P**\n",
+        "\n",
+        "# **Aula 4 18/09**\n",
+        "FOR in RANGE"
+      ],
+      "metadata": {
+        "id": "h9jEuKqmZBk9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Para contar de 7 até 20 de 5 em 5\n",
+        "#for VARIAVEL in RANGE(inicio, fim, espaço)\n",
+        "for i in range(7, 20, 5):\n",
+        "  print(i)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Oybk2DviabmX",
+        "outputId": "35ffb3e1-114f-4a91-9a9a-2d253bcc0931",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7\n",
+            "12\n",
+            "17\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Aula 5 25/09**\n",
+        "Loop While\n",
+        " condição pode ser verificada no início de cada repetição, quando\n",
+        "utilizamos o comando while, ou no final, quando utilizamos o comando FAÇA .... ENQUANTO\n",
+        "(do...while)."
+      ],
+      "metadata": {
+        "id": "fj08Fv8fsr3k"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **EXEMPLO 8**\n",
+        "Programa que utilize estrutura de repetição while para\n",
+        "perguntar ao usuário se deseja ou não realizar a soma de 2\n",
+        "variáveis;\n",
+        "\n",
+        "Enquanto responder Sim o\n",
+        "programa continua solicitando\n",
+        "os valores e calculando a\n",
+        "soma."
+      ],
+      "metadata": {
+        "id": "4n4N57BKuxBL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "  #Pergunta ao usuário se deseja realizar a soma de duas variáveis\n",
+        "  resposta = input(\"Deseja realizar a soma de duas variávies? (S/N): \").strip().upper()\n",
+        "\n",
+        "  #Se a resposta for 'S', realiza a soma\n",
+        "  if resposta == 'S':\n",
+        "    #Solicita ao usuário que insira os valores das variáveis\n",
+        "    var1 = float(input(\"Digite o valor da variável:  \"))\n",
+        "    var2 = float(input(\"Digite o valor da variável:  \"))\n",
+        "\n",
+        "    #Realiza a soma das variáveis\n",
+        "    soma = var1 + var2\n",
+        "\n",
+        "    #Exibe o resultado da soma\n",
+        "    print(f\"A soma de {var1} e {var2} é igual a {soma}\")\n",
+        "\n",
+        "  #Se a resposta for 'N', termina o loop\n",
+        "  elif resposta == 'N':\n",
+        "    print(\"Operação finalizada\")\n",
+        "    break\n",
+        "\n",
+        "  #Caso o usuário insira uma resposta invalida, solicita novamente\n",
+        "  else:\n",
+        "    print(\"Resposta inválida. Por favor, digite 'S' para Sim ou 'N' para Não.\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CzGyOjiAuvcb",
+        "outputId": "f6e22e35-3703-480c-81e0-1fe48cec7314"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Deseja realizar a soma de duas variávies? (S/N): s\n",
+            "Digite o valor da variável:  45\n",
+            "Digite o valor da variável:  45\n",
+            "A soma de 45.0 e 45.0 é igual a 90.0\n",
+            "Deseja realizar a soma de duas variávies? (S/N): n\n",
+            "Operação finalizada\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **EXEMPLO 9**\n",
+        "Programa em que utilize estrutura de\n",
+        "repetição DO WHILE para perguntar\n",
+        "ao usuário se deseja ou não realizar a\n",
+        "soma de 2 variáveis; enquanto\n",
+        "responder Sim o programa continua\n",
+        "solicitando os valores e calculando a\n",
+        "soma."
+      ],
+      "metadata": {
+        "id": "_vnz84oizOEO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:2\n",
+        "  #Pergunta ao usuário se deseja realizar a soma de duas variáveis\n",
+        "  resposta = input(\"Deseja realizar uma soma? (sim/não): \").lower()\n",
+        "\n",
+        "  #Se a resposta for 'sim', realiza a soma\n",
+        "  if resposta == 'sim':\n",
+        "    num1 = float(input(\"Digite o primeiro número:\"))\n",
+        "    num2 = float(input(\"Digite o segundo número: \"))\n",
+        "\n",
+        "    #Realiza a soma das variáveis\n",
+        "    soma = num1 + num2\n",
+        "\n",
+        "    #Exibe o resultado da soma das variáveis\n",
+        "    print(f\"A soma de {num1} e {num2} é igual a {soma}\")\n",
+        "\n",
+        "  #Se a resposta for 'não', termina o loop\n",
+        "  elif resposta == 'não':\n",
+        "    print(\"Operação finalizada\")\n",
+        "    break\n",
+        "\n",
+        "  #Caso o usuário insira uma resposta invalida, solicita novamente\n",
+        "  else:\n",
+        "    print(\"Resposta inválida. Por favor, digite 'sim' para Sim ou 'não' para Não.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fD3uB-pVzblJ",
+        "outputId": "844fe43f-65c6-4ea8-c153-f5ad9b215e96"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Deseja realizar uma soma? (sim/não): s\n",
+            "Resposta inválida. Por favor, digite 'sim' para Sim ou 'não' para Não.\n",
+            "Deseja realizar uma soma? (sim/não): sim\n",
+            "Digite o primeiro número:20\n",
+            "Digite o segundo número: 20\n",
+            "A soma de 20.0 e 20.0 é igual a 40.0\n",
+            "Deseja realizar uma soma? (sim/não): n\n",
+            "Resposta inválida. Por favor, digite 'sim' para Sim ou 'não' para Não.\n",
+            "Deseja realizar uma soma? (sim/não): nao\n",
+            "Resposta inválida. Por favor, digite 'sim' para Sim ou 'não' para Não.\n",
+            "Deseja realizar uma soma? (sim/não): não\n",
+            "Operação finalizada\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
